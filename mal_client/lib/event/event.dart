@@ -1,0 +1,1 @@
+const String EVENT_HISTORY_REFRESH= "EVENT_HISTORY_REFRESH"; //历史记录刷新

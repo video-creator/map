@@ -1,0 +1,42 @@
+syntax = "proto3";
+package mal.proto;
+
+enum MDPFieldDisplayType {
+    int64 = 0;
+    string = 1;
+    separator = 2; //分割符，使用在用循环
+    hex = 3;
+    double = 4;//使用union
+    fixed_16X16_float = 5;
+    int32 = 6;
+    uint32 = 7;
+    uint64 = 8;
+}
+
+// Atom Parsing
+message MALAtomField {
+    string name = 1;
+    int64 pos = 2;
+    int32 bits = 3;
+    string extra_val = 4;
+    int32 big = 5;
+    string value = 7;
+    oneof typevalue {
+        int32 i32 = 8;
+        int64 i64 = 9;
+        uint32 ui32 = 10;
+        uint64 ui64 = 11;
+        double db = 12;
+        string strv = 13;
+    }
+    MDPFieldDisplayType type = 14;
+}
+
+message MALAtom {
+    string name = 1;
+    int64 pos = 2;
+    int64 size = 3;
+    repeated MALAtomField fields = 4;
+    repeated MALAtom child_boxes = 5;
+    int32 header_size = 6;
+}

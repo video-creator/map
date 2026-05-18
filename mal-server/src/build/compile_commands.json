@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/cJSON.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/cJSON.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/cJSON.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/cJSON.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/cJSON_Utils.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/cJSON_Utils.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/cJSON_Utils.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/cJSON_Utils.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/mdp_bits.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_bits.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_bits.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/mdp_bits.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/mdp_error.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_error.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_error.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/mdp_error.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/mdp_int.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_int.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_int.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/mdp_int.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/mdp_string.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_string.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/mdp_string.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/mdp_string.c.o"
+},
+{
+  "directory": "/Users/wangyaqiang/Documents/own_projects/mal/src/build",
+  "command": "/usr/bin/clang -DDART_SHARED_LIB -Dmdp_EXPORTS -I/include -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources -I/Users/wangyaqiang/Documents/own_projects/mal/src/sources/c++/deps  -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/mdp.dir/sources/utils/thpool.c.o -c /Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/thpool.c",
+  "file": "/Users/wangyaqiang/Documents/own_projects/mal/src/sources/utils/thpool.c",
+  "output": "CMakeFiles/mdp.dir/sources/utils/thpool.c.o"
+}
+]

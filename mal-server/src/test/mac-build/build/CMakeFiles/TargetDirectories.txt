@@ -1,0 +1,8 @@
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/mdp.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/mdp_mov_parser_test_g.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/edit_cache.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/rebuild_cache.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/list_install_components.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/install.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/install/local.dir
+/Users/wangyaqiang/Documents/own_projects/mal/src/test/mac-build/build/CMakeFiles/install/strip.dir

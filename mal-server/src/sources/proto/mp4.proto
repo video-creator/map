@@ -1,0 +1,77 @@
+
+syntax = "proto3";
+import "nal.proto";
+import "stream.proto";
+package mal.proto;
+// MP4 Specific
+message MALMP4Mvhd {
+    int64 timescale = 1;
+    int64 duration = 2;
+    int64 matrix = 3;
+}
+message MALMp4Priv {
+    MALMP4Mvhd mvhd = 1;
+}
+
+message MALMP4Mdhd {
+    int64 timescale = 1;
+    int64 duration = 2;
+}
+message MALMP4Stream {
+    MALStream base = 1;
+    repeated int64 stss = 2; // 关键帧
+    repeated StscEntry stsc = 3; // first_chunk,samples_per_chunk,sample_description_index
+    repeated int64 stsz = 4; // 每帧大小size
+    repeated int64 stco = 5; // 每个chunk offset
+    repeated SttsEntry stts = 6; // dts
+    repeated CttsEntry ctts = 7; // pts offset
+    repeated ElstEntry elst = 8; // edit list
+    MALMP4Mdhd mdhd = 9;
+    MALMP4Tkhd tkhd = 10;
+}
+
+message StscEntry {
+    int64 first_chunk = 1;
+    int64 samples_per_chunk = 2;
+    int64 sample_description_index = 3;
+}
+
+message SttsEntry {
+    uint64 sample_count = 1;
+    uint64 sample_delta = 2;
+}
+
+message CttsEntry {
+    uint64 sample_count = 1;
+    uint64 sample_offset = 2;
+}
+
+message ElstEntry {
+    uint64 segment_duration = 1;
+    uint64 media_time = 2;
+    uint64 media_rate_integer = 3;
+    uint64 media_rate_fraction = 4;
+}
+
+message MALMP4Tkhd {
+    int64 track_ID = 1;
+    int64 duration = 2;
+    int64 matrix = 3;
+    double width = 4;
+    double height = 5;
+}
+message MALHVCC {
+    repeated MALHEVCVPS vps_list = 4;
+    repeated MALHEVCSPS sps_list = 5;
+    repeated MALHEVCPPS pps_list = 6;
+    repeated MALHEVCSEI sei_list = 7; //hvcc里边可能存放sei
+}
+
+message MALAVCC {
+    int64 length_size_minus_one = 1;
+    int64 width = 2;
+    int64 height = 3;
+    repeated MALAVCSPS sps_list = 4;
+    repeated MALAVCPPS pps_list = 5;
+}
+

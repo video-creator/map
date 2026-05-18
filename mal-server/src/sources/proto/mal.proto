@@ -1,0 +1,83 @@
+syntax = "proto3";
+import "stream.proto";
+import "nal.proto";
+import "atom.proto";
+package mal.proto;
+
+enum MALPacketFlag {
+    MAL_PACKET_FLAG_NONE = 0;
+    MAL_PACKET_FLAG_IDR = 1;
+    MAL_PACKET_FLAG_I = 2;
+    MAL_PACKET_FLAG_P = 3;
+    MAL_PACKET_FLAG_B = 4;
+}
+enum MALVideoPixelFormat {
+    NONE = 0;
+    YUV420P = 1;
+    YUV420P10LE = 2;
+    ARGB = 3;
+    RGBA = 4;
+    YUVJ420P = 5;
+}
+
+
+message MALFormatContext {
+    repeated MALStream streams = 1;
+    MALCheck shallowCheck = 2;
+    MALDeepCheck deepCheck = 3;
+    MALAtom rootAtom = 4;
+    string name = 5;
+    double duration = 6;
+}
+
+// Common Messages
+message MALCheck {
+    repeated string warnings = 1;
+    repeated string errors = 2;
+}
+
+message MALShallowCheck {
+    MALCheck check = 1;
+}
+
+message MALDeepCheck {
+    MALCheck check = 1;
+}
+
+
+message MALPacket {
+    int64 pos = 1;
+    int64 pts= 2;
+    double pts_time = 3;
+    int64 dts = 4;
+    int64 number = 5; //序号
+    int32 sample_description_index = 6;
+    int32 index = 7; //stream index
+    int32 nal_ref_idc = 14;
+    int32 poc = 15;
+    MALPacketFlag flag = 16;
+    repeated MALPacketNal nals = 17;
+    int64 size = 18;
+    bytes data = 19;
+    double dts_time = 20;
+}
+
+message MALFrame {
+    oneof frame  {
+        MALVideoFrame video_frame = 1;
+        MALAudioFrame audio_frame = 2;
+    }
+    int64 pkt_pos = 3;
+}
+message MALVideoFrame {
+    int32 width = 1;
+    int32 height = 2;
+    bytes rgb_data = 3;
+    bytes frame_data = 4;
+    MALVideoPixelFormat pixel_format = 8;
+}
+message MALAudioFrame {
+    
+}
+
+

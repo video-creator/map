@@ -1,0 +1,112 @@
+syntax = "proto3";
+
+package mal.service;
+
+import "mal.proto";
+import "nal.proto";
+import "stream.proto";
+import "mp4.proto";
+
+// MAL Parser Service - 提供媒体文件解析和分析功能
+service MalParserService {
+    // 解析媒体文件
+    rpc ParseFile(ParseFileRequest) returns (ParseFileResponse);
+    
+    // 获取流信息
+    rpc GetStreamInfo(GetStreamInfoRequest) returns (GetStreamInfoResponse);
+    
+    rpc GetAllStreamInfo(BaseRequest) returns (GetAllStreamInfoResponse);
+    
+    rpc LoadPackets(LoadPacketsRequest) returns (LoadPacketsResponse);
+    
+    rpc LoadFrames(LoadFramesRequest) returns (LoadFramesResponse);
+    
+    rpc LoadOneFrameDetail(LoadOneFrameRequest) returns (LoadOneFrameResponse);
+    
+    rpc GetFormatContextInfo(BaseRequest) returns (ParseFileResponse); //当所有packet读取完成后，再次获取formatctx，可以拿到检查结果
+    
+    rpc Close(BaseRequest) returns (BaseResponse);
+}
+
+message BaseRequest {
+    string session_id = 3;
+}
+message BaseResponse {
+    bool success = 1;
+    string error_message = 2;
+    string value = 3;
+}
+// 解析文件请求
+message ParseFileRequest {
+    string file_path = 1;
+    ParseOptions options = 2;
+    BaseRequest base = 4;
+}
+
+message LoadPacketsRequest {
+    BaseRequest base = 1;
+    int32 size = 2;
+    int32 stream_index = 3;
+}
+
+message LoadPacketsResponse {
+    BaseResponse base = 1;
+    repeated mal.proto.MALPacket packets = 2;
+}
+
+
+message LoadFramesRequest {
+    BaseRequest base = 1;
+    int32 size = 2;
+    int32 start = 3;
+    int32 stream_index = 4;
+}
+
+message LoadOneFrameRequest {
+    BaseRequest base = 1;
+    int64 pos = 2;
+    int32 stream_index = 3;
+}
+
+message LoadOneFrameResponse {
+    BaseResponse base = 1;
+    mal.proto.MALFrame frame = 2;
+}
+
+message LoadFramesResponse {
+    BaseResponse base = 1;
+    repeated mal.proto.MALFrame frames = 2;
+}
+
+// 解析选项
+message ParseOptions {
+    bool parse_headers = 1;
+    bool parse_payload = 2;
+    bool extract_metadata = 3;
+    bool validate_structure = 4;
+    int32 max_depth = 5;
+}
+
+// 解析文件响应
+message ParseFileResponse {
+    BaseResponse base = 1;
+    mal.proto.MALFormatContext context = 3;
+}
+
+// 获取流信息请求
+message GetStreamInfoRequest {
+    BaseRequest base = 1;
+    int32 stream_index = 2; // -1 表示所有流
+}
+
+// 获取流信息响应
+message GetStreamInfoResponse {
+    BaseResponse base = 1;
+    mal.proto.MALStream stream = 3;
+}
+message GetAllStreamInfoResponse {
+    BaseResponse base = 1;
+    repeated mal.proto.MALStream streams = 2;
+}
+
+

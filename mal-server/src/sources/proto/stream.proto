@@ -1,0 +1,90 @@
+syntax = "proto3";
+import "nal.proto";
+package mal.proto;
+// Enums
+enum MALMediaType {
+    MAL_MEDIA_TYPE_NONE = 0;
+    MAL_MEDIA_TYPE_VIDEO = 1;
+    MAL_MEDIA_TYPE_AUDIO = 2;
+    MAL_MEDIA_TYPE_STATIC_Image = 3;
+    MAL_MEDIA_TYPE_ANIMATED_Image = 4;
+    MAL_MEDIA_TYPE_Subtitle = 5;
+}
+
+enum MALVideoCodecType {
+    MAL_VIDEO_CODEC_NONE = 0;
+    MAL_VIDEO_CODEC_H264 = 1;
+    MAL_VIDEO_CODEC_H265 = 2;
+    MAL_VIDEO_CODEC_AVS2 = 3;
+    MAL_VIDEO_CODEC_AVS3 = 4;
+    MAL_VIDEO_CODEC_QUICKTIME = 5;
+    MAL_VIDEO_CODEC_PRORES = 6;
+    MAL_VIDEO_CODEC_VP8 = 7;
+    MAL_VIDEO_CODEC_VP9 = 8;
+    MAL_VIDEO_CODEC_FFV1 = 9;
+    MAL_VIDEO_CODEC_PNG = 10;
+    MAL_VIDEO_CODEC_JPG = 11;
+}
+enum MALAudioCodecType {
+    MAL_AUDIO_CODEC_NONE = 0;
+    MAL_AUDIO_CODEC_L3 = 1;
+    MAL_AUDIO_CODEC_L2 = 2;
+    MAL_AUDIO_CODEC_L1 = 3;
+    MAL_AUDIO_CODEC_AC3 = 4;
+    MAL_AUDIO_CODEC_ALAC = 5;
+    MAL_AUDIO_CODEC_VORBIS = 6;
+    MAL_AUDIO_CODEC_FLAC = 7;
+    MAL_AUDIO_CODEC_AAC = 8;
+}
+enum MALSubtitleCodecType {
+    MAL_SUBTITLE_CODEC_NONE = 0;
+    MAL_SUBTITLE_CODEC_TEXT_UTF8 = 1;
+    MAL_SUBTITLE_CODEC_TEXT_SSA = 2;
+    MAL_SUBTITLE_CODEC_TEXT_ASS = 3;
+    MAL_SUBTITLE_CODEC_TEXT_WEBVTT = 4;
+    MAL_SUBTITLE_CODEC_IMAGE_BMP = 5;
+}
+
+// Video Configuration Base
+message MALVideoConfig {
+    int64 length_size_minus_one = 1;
+    int64 width = 2;
+    int64 height = 3;
+}
+
+// Stream & Format
+message MALStream {
+    MALMediaType media_type = 1;
+    int32 index = 3;
+    int64 max_sample_size = 6;//用来提前保存最大的pkt size，画矩形图
+    oneof stream {
+        MALVideoStream video_stream = 7;
+        MALAudioStream audio_stream = 8;
+    }
+    double duration = 9;
+    int64 total_frames = 10;
+    double bitrate = 11;
+    oneof codec_type {
+        MALVideoCodecType video_codec = 12;
+        MALAudioCodecType audio_codec = 13;
+        MALSubtitleCodecType subtitle_codec = 14;
+    };
+    string codec_name = 15;
+}
+
+message MALVideoStream{
+    int32 width = 1;
+    int32 height = 2;
+    repeated MALVideoConfig video_configs = 3; //hvcc/avcc
+    repeated MALPSItem ps_items = 4; //hvcc/avcc
+    string profile = 5;
+    int64 i_frames = 6;
+    int64 p_frames = 7;
+    int64 b_frames = 8;
+    int32 fps = 9;
+    string sync = 10;
+    repeated MALPSItem display_items = 11;//给前端显示
+}
+message MALAudioStream {
+    int32 channels = 1;
+}

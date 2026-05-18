@@ -1,0 +1,376 @@
+syntax = "proto3";
+import "atom.proto";
+package mal.proto;
+// NAL Unit Base
+message MALNal {
+    int32 nal_unit_type = 1;
+    string nal_name = 2;
+}
+
+message MALHEVCNal {
+    MALNal base = 1;
+    int32 forbidden_zero_bit = 2;
+    int32 nuh_layer_id = 3;
+    int32 nuh_temporal_id_plus1 = 4;
+}
+// H.265 Specific
+
+
+message MALHEVCVPS {
+    MALHEVCNal base = 1;
+    int32 video_parameter_set_id = 2;
+    repeated int32 LayerIdxInVps = 3;
+    repeated int32 poc_lsb_not_present_flag = 4;
+}
+
+
+message MALHEVCSPS {
+    MALHEVCNal base = 1;
+    int32 sps_video_parameter_set_id = 2;
+    int32 seq_parameter_set_id = 3;
+    int32 pic_width_in_luma_samples = 4;
+    int32 pic_height_in_luma_samples = 5;
+    int32 log2_max_pic_order_cnt_lsb_minus4 = 6;
+    int32 log2_min_luma_coding_block_size_minus3 = 7;
+    int32 log2_diff_max_min_luma_coding_block_size = 8;
+    int32 separate_colour_plane_flag = 9;
+    int32 num_short_term_ref_pic_sets = 10;
+}
+
+message MALHEVCPPS {
+    MALHEVCNal base = 1;
+    int32 pic_parameter_set_id = 2; //当前PPS的ID，供slice RBSP使用
+    int32 seq_parameter_set_id = 3; //当前PPS所属的SPS的ID
+    int32 dependent_slice_segments_enabled_flag  = 4;
+    int32 num_extra_slice_header_bits = 5;
+    int32 output_flag_present_flag = 6;
+}
+
+
+
+
+message MALSEIMasterDisplayColour {
+    int32 display_primaries_x_0 = 1;
+    int32 display_primaries_x_1 = 2;
+    int32 display_primaries_x_2 = 3;
+    
+    int32 display_primaries_y_0 = 4;
+    int32 display_primaries_y_1 = 5;
+    int32 display_primaries_y_2 = 6;
+    
+    int32 white_point_x = 7;
+    int32 white_point_y = 8;
+    int32 max_display_mastering_luminance = 9;
+    int32 min_display_mastering_luminance = 10;
+}
+message MALSEIContentLightLevelInfo {
+    int32 max_content_light_level = 1;
+    int32 max_pic_average_light_level = 2;
+}
+message MALSEIUserDataRegisteredItuTT35 {
+    int32 itu_t_t35_country_code = 1;
+    int32 itu_t_t35_country_code_extension_byte = 2;
+    string itu_t_t35_payload_byte = 3;
+}
+message MALSEIMessage {
+    
+    string key = 1;
+    int32 payloadType = 2;
+    string value = 3;
+    int32 payloadSize = 4;
+    string key_hex = 5;
+    string value_hex = 6;
+    
+    oneof sei_type {
+        MALHEVCSEI.MALHEVCSEIType hevc_sei_type = 7;//和payloadType对应
+        MALAVCSEI.MALAVCSEIType  avc_sei_type = 8;//和payloadType对应
+    }
+    
+    oneof payload {
+        MALSEIMasterDisplayColour displayColour = 9;
+        MALSEIContentLightLevelInfo contentLightLevelInfo = 10;
+        MALSEIUserDataRegisteredItuTT35 userDataRegisteredItuTT35 = 11;
+    };
+}
+
+
+
+message MALHEVCSEI {
+    enum MALHEVCSEIType {
+        buffering_period_ = 0;
+        pic_timing = 1;
+        pan_scan_rect = 2;
+        filler_payload = 3;
+        user_data_registered_itu_t_t35 = 4;
+        user_data_unregistered = 5;
+        recovery_point = 6;
+        scene_info = 9;
+        picture_snapshot = 15;
+        progressive_refinement_segment_start = 16;
+        progressive_refinement_segment_end = 17;
+        film_grain_characteristics = 19;
+        post_filter_hint = 22;
+        tone_mapping_info = 23;
+        frame_packing_arrangement = 45;
+        display_orientation = 47;
+        green_metadata = 56;
+        structure_of_pictures_info = 128;
+        active_parameter_sets = 129;
+        decoding_unit_info = 130;
+        temporal_sub_layer_zero_index = 131;
+        decoded_picture_hash = 132;
+        scalable_nesting = 133;
+        region_refresh_info = 134;
+        no_display = 135;
+        time_code = 136;
+        mastering_display_colour_volume = 137;
+        segmented_rect_frame_packing_arrangement = 138;
+        temporal_motion_constrained_tile_sets = 139;
+        chroma_resampling_filter_hint = 140;
+        knee_function_info = 141;
+        colour_remapping_info = 142;
+        deinterlaced_field_identification = 143;
+        content_light_level_info = 144;
+        dependent_rap_indication = 145;
+        coded_region_completion = 146;
+        alternative_transfer_characteristics = 147;
+        ambient_viewing_environment = 148;
+        content_colour_volume = 149;
+        equirectangular_projection = 150;
+        cubemap_projection = 151;
+        fisheye_video_info = 152;
+        sphere_rotation = 154;
+        regionwise_packing = 155;
+        omni_viewport = 156;
+        regional_nesting = 157;
+        mcts_extraction_info_sets = 158;
+        mcts_extraction_info_nesting = 159;
+        layers_not_present = 160;
+        inter_layer_constrained_tile_sets = 161;
+        bsp_nesting = 162;
+        bsp_initial_arrival_time = 163;
+        sub_bitstream_property = 164;
+        alpha_channel_info = 165;
+        overlay_info = 166;
+        temporal_mv_prediction_constraints = 167;
+        frame_field_info = 168;
+        three_dimensional_reference_displays_info = 176;
+        depth_representation_info = 177;
+        multiview_scene_info = 178;
+        multiview_acquisition_info = 179;
+        multiview_view_position = 180;
+        alternative_depth_info = 181;
+        sei_manifest = 200;
+        sei_prefix_indication = 201;
+        annotated_regions = 202;
+        shutter_interval_info = 205;
+        reserved_sei_message = 9999;
+        
+    }
+
+    MALHEVCNal base = 1;
+    repeated MALSEIMessage messageList = 2;
+}
+
+
+
+message MALHEVCSliceSegmentHeader {
+    int32 first_slice_segment_in_pic_flag = 1;
+    int32 no_output_of_prior_pics_flag = 2;
+    int32 slice_pic_parameter_set_id = 3;
+    int32 slice_segment_address = 4;
+    int32 slice_type = 5;
+    int32 slice_pic_order_cnt_lsb = 6;
+}
+
+
+message MALHEVCSliceSegmentLayerRbsp {
+    MALHEVCNal base = 1;
+    MALHEVCSliceSegmentHeader header = 2;
+}
+
+message MALAVCNal {
+    MALNal base = 1;
+    int32 nal_ref_idc = 2;
+}
+
+message MALAVCSPS {
+    MALAVCNal base = 1;
+    int32 profile_idc = 2;
+    int32 level_idc = 3;
+    int32 seq_parameter_set_id = 4;
+    int32 chroma_format_idc = 5;
+    int32 bit_depth_luma_minus8 = 6;
+    int32 bit_depth_chroma_minus8 = 7;
+    int32 log2_max_frame_num_minus4 = 8;
+    int32 pic_order_cnt_type = 9;
+    int32 delta_pic_order_always_zero_flag  = 10;
+    int32 num_ref_frames_in_pic_order_cnt_cycle = 11;
+    repeated int32 offset_for_ref_frame = 12;
+    int32 log2_max_pic_order_cnt_lsb_minus4 = 13;
+    int32 max_num_ref_frames = 14;
+    int32 pic_width_in_mbs_minus1 = 15;
+    int32 pic_height_in_map_units_minus1 = 16;
+    int32 frame_mbs_only_flag = 17;
+    int32 mb_adaptive_frame_field_flag = 18;
+    int32 frame_cropping_flag = 19;
+    int32 separate_colour_plane_flag = 20;
+    int32 offset_for_non_ref_pic = 21;
+    int32 offset_for_top_to_bottom_field = 22;
+}
+
+
+message MALAVCPPS { //nal_unit_type 8
+    MALAVCNal base = 1;
+    int32 pic_parameter_set_id = 2; //当前PPS的ID，供slice RBSP使用
+    int32 seq_parameter_set_id = 3; //当前PPS所属的SPS的ID
+    int32 entropy_coding_mode_flag = 4; //为0时表明采用CAVLC编码，为1时采用CABAC编码
+    int32 bottom_field_pic_order_in_frame_present_flag  = 5; //用于POC计算
+    int32 redundant_pic_cnt_present_flag = 6;
+    int32 weighted_pred_flag = 7;
+    int32 weighted_bipred_idc = 8;
+    int32 deblocking_filter_control_present_flag = 9;
+    int32 num_slice_groups_minus1 = 10;
+    int32 slice_group_map_type = 11;
+    int32 slice_group_change_rate_minus1 = 12;
+    int32 pic_size_in_map_units_minus1 = 13;
+}
+
+message MALAVCSliceHeader {
+    int32 first_mb_in_slice = 1;
+    int32 slice_type = 2; //slice_type % 5 ->  0:P 1:B 2:I 3:SP 4:SI
+    int32 colour_plane_id = 3;
+    int32 pic_parameter_set_id = 4;
+    int32 frame_num = 5;
+    int32 field_pic_flag = 6;
+    int32 bottom_field_flag = 7;
+    int32 idr_pic_id = 8;
+    int32 pic_order_cnt_lsb = 9;
+    int32 delta_pic_order_cnt_bottom = 10;
+    repeated int32 delta_pic_order_cnt = 11;
+    int32 slice_qp_delta = 12;
+    int32 num_ref_idx_active_override_flag = 13;
+    int32 num_ref_idx_l0_active_minus1 = 14;
+    int32 num_ref_idx_l1_active_minus1 = 15;
+    int32 memory_management_control_operation = 16;
+}
+
+
+message MALAVCSliceWithOutPartitioning { //nal_unit_type 1/5
+    MALAVCNal base = 1;
+    MALAVCSliceHeader header = 2;
+}
+message MALAVCSlicePartitionA { //nal_unit_type 2
+    MALAVCNal base = 1;
+    MALAVCSliceHeader header = 2;
+}
+
+message MALAVCSEI { //nal_unit_type 6
+    enum MALAVCSEIType {
+        buffering_period_ = 0;
+        pic_timing = 1;
+        pan_scan_rect = 2;
+        filler_payload = 3;
+        user_data_registered_itu_t_t35 = 4;
+        user_data_unregistered = 5;
+        recovery_point = 6;
+        dec_ref_pic_marking_repetition = 7;
+        spare_pic = 8;
+        scene_info = 9;
+        sub_seq_info = 10;
+        sub_seq_layer_characteristic = 11;
+        sub_seq_characteristics = 12;
+        full_frame_freeze = 13;
+        full_frame_freeze_release = 14;
+        full_frame_snapshot = 15;
+        progressive_refinement_segment_start = 16;
+        progressive_refinement_segment_end = 17;
+        motion_constrained_slice_group_set = 18;
+        film_grain_characteristics = 19;
+        deblocking_filter_display_preference = 20;
+        stereo_video_info = 21;
+        post_filter_hint = 22;
+        tone_mapping_info = 23;
+        scalability_info = 24;
+        sub_pic_scalable_layer = 25;
+        non_required_layer_rep = 26;
+        priority_layer_info = 27;
+        layers_not_present = 28;
+        layer_dependency_change = 29;
+        scalable_nesting = 30;
+        base_layer_temporal_hrd = 31;
+        quality_layer_integrity_check = 32;
+        redundant_pic_property = 33;
+        tl0_dep_rep_index = 34;
+        tl_switching_point = 35;
+        parallel_decoding_info = 36;
+        mvc_scalable_nesting = 37;
+        view_scalability_info = 38;
+        multiview_scene_info = 39;
+        multiview_acquisition_info = 40;
+        non_required_view_component = 41;
+        view_dependency_change = 42;
+        operation_points_not_present = 43;
+        base_view_temporal_hrd = 44;
+        
+        
+        frame_packing_arrangement = 45;
+        multiview_view_position = 46;
+        display_orientation = 47;
+        mvcd_scalable_nesting = 48;
+        mvcd_view_scalability_info = 49;
+        depth_representation_info = 50;
+        three_dimensional_reference_displays_info = 51;
+        depth_timing = 52;
+        depth_sampling_info = 53;
+        constrained_depth_parameter_set_identifier = 54;
+        green_metadata = 56;
+        mastering_display_colour_volume = 137;
+        colour_remapping_info = 142;
+        content_light_level_info = 144;
+        alternative_transfer_characteristics = 147;
+        ambient_viewing_environment = 148;
+        content_colour_volume = 149;
+        equirectangular_projection = 150;
+        cubemap_projection = 151;
+        sphere_rotation = 154;
+        regionwise_packing = 155;
+        omni_viewport = 156;
+        alternative_depth_info = 181;
+        sei_manifest = 200;
+        sei_prefix_indication = 201;
+        
+        reserved_sei_message = 9999;
+        
+    }
+    MALAVCNal base = 1;
+    repeated MALSEIMessage messageList = 2;
+}
+
+message MALPSCell {
+    bool enable = 1;
+    string val = 2;
+}
+
+message MALPSItem {
+    repeated MALPSItem childs = 1;
+    repeated MALPSCell cells = 2;
+}
+
+message MALPacketNal {
+    oneof nal {
+        MALHEVCNal hevc_nal = 1;
+        MALHEVCVPS hevc_vps = 2;
+        MALHEVCSPS hevc_sps = 3;
+        MALHEVCPPS hevc_pps = 4;
+        MALHEVCSEI hevc_sei = 5;
+        MALHEVCSliceSegmentLayerRbsp hevc_rbsp = 6;
+        MALAVCNal avc_nal = 7;
+        MALAVCSPS avc_sps = 8;
+        MALAVCPPS avc_pps = 9;
+        MALAVCSliceWithOutPartitioning avc_out_rbsp = 10;
+        MALAVCSlicePartitionA avc_part_a_rbsp = 11;
+        MALAVCSEI avc_sei = 12;
+    };
+    repeated MALAtomField display_fields = 13;
+}
