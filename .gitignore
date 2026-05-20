@@ -3,8 +3,17 @@ mal-server/Demo/build/
 mal-server/Demo/.build/
 mal_server/build/
 
-# Precompiled third-party libraries
+# Precompiled third-party libraries (old per-arch dirs superseded by universal/)
 mal-server/src/third_party/mac/universal/
+mal-server/src/third_party/mac/protoc/
+mal-server/src/third_party/mac/protoc_arm64/
+mal-server/src/third_party/mac/ffmpeg/
+mal-server/src/third_party/mac/ffmpeg_arm64/
+mal-server/src/third_party/mac/libyuv/
+mal-server/src/third_party/mac/libyuv_arm64/
+
+# Old gRPC Demo server
+mal_client/macos/Runner/Demo
 
 # Build caches
 mal-server/tools/macos/.build_artifacts/
