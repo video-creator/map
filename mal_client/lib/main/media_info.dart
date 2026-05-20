@@ -47,22 +47,31 @@ mixin MediaInfo {
   Future<ParseFileResponse> startParser(String path) async {
     path_ = path;
     try {
+      debugPrint('[media_info] startParser: opening fileReader for path=$path');
       fileReader = await LocalFileReader.open(path);
+      debugPrint('[media_info] fileReader opened');
       createRPCClient();
+      debugPrint('[media_info] calling client_.parseFile...');
       var bytes = client_!.parseFile(path);
+      debugPrint('[media_info] parseFile returned, bytes=${bytes?.length}');
       if (bytes != null) {
+        debugPrint('[media_info] trying to deserialize ParseFileResponse, size=${bytes.length}');
         var response = ParseFileResponse.fromBuffer(bytes);
+        debugPrint('[media_info] deserialized, success=${response.base.success}');
         if (response.base.success) {
           formatContext = response.context;
           debugPrint("startParser 赋值数据 rootatom = ${formatContext?.rootAtom != null}");
         }
         return response;
       }
+      debugPrint('[media_info] bytes is null - FFI returned null!');
       ParseFileResponse response = ParseFileResponse();
       response.ensureBase().success = false;
       response.ensureBase().errorMessage = "解析文件失败(FFI返回空)!";
       return response;
     } catch (e) {
+      debugPrint('[media_info] CRASH in startParser: $e');
+      debugPrint('[media_info] stacktrace: ${StackTrace.current}');
       // 捕获异常并打印日志
       ParseFileResponse response = ParseFileResponse();
       response.ensureBase().success = false;

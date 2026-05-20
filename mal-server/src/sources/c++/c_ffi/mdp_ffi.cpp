@@ -7,6 +7,7 @@
 #include <iostream>
 #include <unordered_map>
 #include <mutex>
+#include <sys/syslog.h>
 
 #include "../parser/mal_i_parser.h"
 #include "../parser/mal_mov_parser.h"
@@ -90,6 +91,15 @@ void mdp_destroy_session(void* session) {
 
 MDPBuffer* mdp_parse_file(void* session, const char* path) {
     if (!session || !path) return nullptr;
+
+    // DIAG: 用 syslog 避免沙箱屏蔽 /tmp 写入
+    FILE* fp__ = fopen(path, "rb");
+    if (fp__) {
+        syslog(LOG_ERR, "[mdp_ffi_DIAG] fopen(%s): OK", path);
+        fclose(fp__);
+    } else {
+        syslog(LOG_ERR, "[mdp_ffi_DIAG] fopen(%s): FAILED errno=%d", path, errno);
+    }
 
     try {
         auto parser = create_parser_for_path(std::string(path));

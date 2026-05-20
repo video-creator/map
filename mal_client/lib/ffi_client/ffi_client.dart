@@ -2,6 +2,7 @@ import 'dart:ffi';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:ffi/ffi.dart';
+import 'package:flutter/foundation.dart';
 
 // ═══════════════════════════════════════════════════════
 // FFI 类型定义（与 C++ mdp_ffi_types.h 对应）
@@ -121,7 +122,12 @@ class MdpFfiClient {
 
   static DynamicLibrary _loadLibrary() {
     if (Platform.isMacOS) {
-      return DynamicLibrary.open('libmdp.dylib');
+      // 从 app bundle 的 Frameworks 目录加载（由 Bundle Framework build phase 嵌入）
+      final executableDir = File(Platform.resolvedExecutable).parent;
+      final frameworksDir = '${executableDir.path}/../Frameworks';
+      final libPath = '$frameworksDir/libmdp.dylib';
+      debugPrint('Loading libmdp.dylib from: $libPath');
+      return DynamicLibrary.open(libPath);
     } else if (Platform.isLinux) {
       return DynamicLibrary.open('libmdp.so');
     } else if (Platform.isWindows) {
@@ -173,13 +179,26 @@ class MdpFfiClient {
 
   /// 解析媒体文件，返回序列化的 ParseFileResponse 字节。
   Uint8List? parseFile(String path) {
+    debugPrint('[ffi_debug] parseFile called, path=$path');
+    debugPrint('[ffi_debug] _session=${_session.address}');
     final pathPtr = path.toNativeUtf8();
     try {
+      debugPrint('[ffi_debug] calling _parseFile...');
       final bufPtr = _parseFile(_session, pathPtr);
-      if (bufPtr == nullptr) return null;
-      return _readBuffer(bufPtr);
+      debugPrint('[ffi_debug] _parseFile returned, bufPtr=${bufPtr.address}');
+      if (bufPtr == nullptr) {
+        debugPrint('[ffi_debug] bufPtr is NULL - C++ returned null!');
+        return null;
+      }
+      final result = _readBuffer(bufPtr);
+      debugPrint('[ffi_debug] _readBuffer done, result.length=${result.length}');
+      return result;
+    } catch (e) {
+      debugPrint('[ffi_debug] CRASH in parseFile: $e');
+      rethrow;
     } finally {
       calloc.free(pathPtr);
+      debugPrint('[ffi_debug] pathPtr freed');
     }
   }
 
@@ -242,10 +261,24 @@ class MdpFfiClient {
   // ──── 内部辅助 ────
 
   /// 从 MDPBuffer 读取数据并释放资源
+  /// 注意：必须在释放 native 内存前拷贝数据
   Uint8List _readBuffer(Pointer<MDPBuffer> bufPtr) {
     final buf = bufPtr.ref;
-    final data = buf.data.asTypedList(buf.size);
+    final length = buf.size;
+    final ptr = buf.data;
+    debugPrint('[ffi_debug] _readBuffer: length=$length, ptr=${ptr.address}');
+    if (length <= 0 || ptr == nullptr) {
+      debugPrint('[ffi_debug] _readBuffer: invalid data!');
+      _freeBuffer(bufPtr);
+      return Uint8List(0);
+    }
+    // 先拷贝到 Dart 堆，再释放 C++ 内存（防 use-after-free）
+    final view = ptr.asTypedList(length);
+    debugPrint('[ffi_debug] view created, view.length=${view.length}');
+    final result = Uint8List.fromList(view);
+    debugPrint('[ffi_debug] copied to Dart heap, result.length=${result.length}');
     _freeBuffer(bufPtr);
-    return data;
+    debugPrint('[ffi_debug] native buffer freed');
+    return result;
   }
 }

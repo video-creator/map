@@ -144,41 +144,12 @@
 		5D2885BC2E571F1500D0DC90 /* libabsl_tracing_internal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885102E571F1500D0DC90 /* libabsl_tracing_internal.a */; };
 		5D2885BD2E571F1500D0DC90 /* libabsl_utf8_for_code_point.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885112E571F1500D0DC90 /* libabsl_utf8_for_code_point.a */; };
 		5D2885BE2E571F1500D0DC90 /* libabsl_vlog_config_internal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885122E571F1500D0DC90 /* libabsl_vlog_config_internal.a */; };
-		5D2885BF2E571F1500D0DC90 /* libaddress_sorting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885132E571F1500D0DC90 /* libaddress_sorting.a */; };
-		5D2885C02E571F1500D0DC90 /* libcares.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885142E571F1500D0DC90 /* libcares.a */; };
-		5D2885C12E571F1500D0DC90 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885152E571F1500D0DC90 /* libcrypto.a */; };
-		5D2885C22E571F1500D0DC90 /* libgpr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885162E571F1500D0DC90 /* libgpr.a */; };
-		5D2885C32E571F1500D0DC90 /* libgrpc_authorization_provider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885172E571F1500D0DC90 /* libgrpc_authorization_provider.a */; };
-		5D2885C42E571F1500D0DC90 /* libgrpc_plugin_support.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885182E571F1500D0DC90 /* libgrpc_plugin_support.a */; };
-		5D2885C52E571F1500D0DC90 /* libgrpc_unsecure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885192E571F1500D0DC90 /* libgrpc_unsecure.a */; };
-		5D2885C62E571F1500D0DC90 /* libgrpc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851A2E571F1500D0DC90 /* libgrpc.a */; };
-		5D2885C72E571F1500D0DC90 /* libgrpc++_alts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851B2E571F1500D0DC90 /* libgrpc++_alts.a */; };
-		5D2885C82E571F1500D0DC90 /* libgrpc++_error_details.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851C2E571F1500D0DC90 /* libgrpc++_error_details.a */; };
-		5D2885C92E571F1500D0DC90 /* libgrpc++_reflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851D2E571F1500D0DC90 /* libgrpc++_reflection.a */; };
-		5D2885CA2E571F1500D0DC90 /* libgrpc++_unsecure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851E2E571F1500D0DC90 /* libgrpc++_unsecure.a */; };
-		5D2885CB2E571F1500D0DC90 /* libgrpc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28851F2E571F1500D0DC90 /* libgrpc++.a */; };
-		5D2885CC2E571F1500D0DC90 /* libgrpcpp_channelz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885202E571F1500D0DC90 /* libgrpcpp_channelz.a */; };
 		5D2885CD2E571F1500D0DC90 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885212E571F1500D0DC90 /* libprotobuf-lite.a */; };
 		5D2885CE2E571F1500D0DC90 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885222E571F1500D0DC90 /* libprotobuf.a */; };
 		5D2885CF2E571F1500D0DC90 /* libprotoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885232E571F1500D0DC90 /* libprotoc.a */; };
-		5D2885D02E571F1500D0DC90 /* libre2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885242E571F1500D0DC90 /* libre2.a */; };
-		5D2885D12E571F1500D0DC90 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885252E571F1500D0DC90 /* libssl.a */; };
-		5D2885D22E571F1500D0DC90 /* libupb_base_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885262E571F1500D0DC90 /* libupb_base_lib.a */; };
-		5D2885D32E571F1500D0DC90 /* libupb_hash_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885272E571F1500D0DC90 /* libupb_hash_lib.a */; };
-		5D2885D42E571F1500D0DC90 /* libupb_json_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885282E571F1500D0DC90 /* libupb_json_lib.a */; };
-		5D2885D52E571F1500D0DC90 /* libupb_lex_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885292E571F1500D0DC90 /* libupb_lex_lib.a */; };
-		5D2885D62E571F1500D0DC90 /* libupb_mem_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852A2E571F1500D0DC90 /* libupb_mem_lib.a */; };
-		5D2885D72E571F1500D0DC90 /* libupb_message_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852B2E571F1500D0DC90 /* libupb_message_lib.a */; };
-		5D2885D82E571F1500D0DC90 /* libupb_mini_descriptor_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852C2E571F1500D0DC90 /* libupb_mini_descriptor_lib.a */; };
-		5D2885D92E571F1500D0DC90 /* libupb_mini_table_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852D2E571F1500D0DC90 /* libupb_mini_table_lib.a */; };
-		5D2885DA2E571F1500D0DC90 /* libupb_reflection_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852E2E571F1500D0DC90 /* libupb_reflection_lib.a */; };
-		5D2885DB2E571F1500D0DC90 /* libupb_textformat_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D28852F2E571F1500D0DC90 /* libupb_textformat_lib.a */; };
-		5D2885DC2E571F1500D0DC90 /* libupb_wire_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885302E571F1500D0DC90 /* libupb_wire_lib.a */; };
-		5D2885DD2E571F1500D0DC90 /* libupb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885312E571F1500D0DC90 /* libupb.a */; };
 		5D2885DE2E571F1500D0DC90 /* libutf8_range_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885322E571F1500D0DC90 /* libutf8_range_lib.a */; };
 		5D2885DF2E571F1500D0DC90 /* libutf8_range.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885332E571F1500D0DC90 /* libutf8_range.a */; };
 		5D2885E02E571F1500D0DC90 /* libutf8_validity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885342E571F1500D0DC90 /* libutf8_validity.a */; };
-		5D2885E32E571F1500D0DC90 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885372E571F1500D0DC90 /* libz.a */; };
 		5D2885E62E571F4500D0DC90 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885E52E571F4500D0DC90 /* libz.1.tbd */; };
 		5D2885EA2E5739C800D0DC90 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2885E92E5739C800D0DC90 /* libz.1.dylib */; };
 		5D2885ED2E58182400D0DC90 /* mal_service.proto in Sources */ = {isa = PBXBuildFile; fileRef = 5D2885EC2E58182400D0DC90 /* mal_service.proto */; };
@@ -203,34 +174,23 @@
 		5D78C3952CD3B3BB005637E4 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3092CD3B3BB005637E4 /* libavfilter.a */; };
 		5D78C3962CD3B3BB005637E4 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30A2CD3B3BB005637E4 /* libavformat.a */; };
 		5D78C3972CD3B3BB005637E4 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30B2CD3B3BB005637E4 /* libavutil.a */; };
-		5D78C3982CD3B3BB005637E4 /* libffservice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30C2CD3B3BB005637E4 /* libffservice.a */; };
 		5D78C3992CD3B3BB005637E4 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30D2CD3B3BB005637E4 /* libpostproc.a */; };
 		5D78C39A2CD3B3BB005637E4 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30E2CD3B3BB005637E4 /* libswresample.a */; };
 		5D78C39B2CD3B3BB005637E4 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C30F2CD3B3BB005637E4 /* libswscale.a */; };
 		5D78C39C2CD3B3BB005637E4 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3122CD3B3BB005637E4 /* libfreetype.a */; };
 		5D78C39D2CD3B3BB005637E4 /* libfribidi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3142CD3B3BB005637E4 /* libfribidi.a */; };
-		5D78C39F2CD3B3BB005637E4 /* libharfbuzz-cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3182CD3B3BB005637E4 /* libharfbuzz-cairo.a */; };
 		5D78C3A02CD3B3BB005637E4 /* libharfbuzz-gobject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3192CD3B3BB005637E4 /* libharfbuzz-gobject.a */; };
-		5D78C3A12CD3B3BB005637E4 /* libharfbuzz-icu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C31A2CD3B3BB005637E4 /* libharfbuzz-icu.a */; };
 		5D78C3A22CD3B3BB005637E4 /* libharfbuzz-subset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C31B2CD3B3BB005637E4 /* libharfbuzz-subset.a */; };
 		5D78C3A32CD3B3BB005637E4 /* libharfbuzz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C31C2CD3B3BB005637E4 /* libharfbuzz.a */; };
 		5D78C3A42CD3B3BB005637E4 /* libass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C31E2CD3B3BB005637E4 /* libass.a */; };
 		5D78C3A52CD3B3BB005637E4 /* libunibreak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3202CD3B3BB005637E4 /* libunibreak.a */; };
-		5D78C3A62CD3B3BB005637E4 /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3262CD3B3BB005637E4 /* libpng16.a */; };
 		5D78C3A72CD3B3BB005637E4 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3782CD3B3BB005637E4 /* libSDL2.a */; };
-		5D78C3A82CD3B3BB005637E4 /* libvmaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C37A2CD3B3BB005637E4 /* libvmaf.a */; };
 		5D78C3A92CD3B3BB005637E4 /* libsharpyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C37C2CD3B3BB005637E4 /* libsharpyuv.a */; };
 		5D78C3AA2CD3B3BB005637E4 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C37D2CD3B3BB005637E4 /* libwebp.a */; };
 		5D78C3AB2CD3B3BB005637E4 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C37E2CD3B3BB005637E4 /* libwebpdemux.a */; };
 		5D78C3AC2CD3B3BB005637E4 /* libwebpmux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C37F2CD3B3BB005637E4 /* libwebpmux.a */; };
 		5D78C3AD2CD3B3BB005637E4 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3812CD3B3BB005637E4 /* libx264.a */; };
 		5D78C3AE2CD3B3BB005637E4 /* libx265.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3832CD3B3BB005637E4 /* libx265.a */; };
-		5D78C3AF2CD3B3BB005637E4 /* libXau.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3852CD3B3BB005637E4 /* libXau.a */; };
-		5D78C3B02CD3B3BB005637E4 /* libxcb-shape.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3872CD3B3BB005637E4 /* libxcb-shape.a */; };
-		5D78C3B12CD3B3BB005637E4 /* libxcb-shm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3882CD3B3BB005637E4 /* libxcb-shm.a */; };
-		5D78C3B22CD3B3BB005637E4 /* libxcb-xfixes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C3892CD3B3BB005637E4 /* libxcb-xfixes.a */; };
-		5D78C3B32CD3B3BB005637E4 /* libxcb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C38A2CD3B3BB005637E4 /* libxcb.a */; };
-		5D78C3B42CD3B3BB005637E4 /* libXdmcp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D78C38C2CD3B3BB005637E4 /* libXdmcp.a */; };
 		5D78C3CA2CDA5A0A005637E4 /* dart_api_dl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D78C3C12CDA5A0A005637E4 /* dart_api_dl.c */; };
 		5D78C3CB2CDA5A0A005637E4 /* dart_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D78C3C42CDA5A0A005637E4 /* dart_init.c */; };
 		5D78C3DB2CDB1CC9005637E4 /* mal_i_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D78C3CF2CDB1CC9005637E4 /* mal_i_parser.cpp */; };
@@ -1348,41 +1308,12 @@
 		5D2885102E571F1500D0DC90 /* libabsl_tracing_internal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libabsl_tracing_internal.a; sourceTree = "<group>"; };
 		5D2885112E571F1500D0DC90 /* libabsl_utf8_for_code_point.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libabsl_utf8_for_code_point.a; sourceTree = "<group>"; };
 		5D2885122E571F1500D0DC90 /* libabsl_vlog_config_internal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libabsl_vlog_config_internal.a; sourceTree = "<group>"; };
-		5D2885132E571F1500D0DC90 /* libaddress_sorting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaddress_sorting.a; sourceTree = "<group>"; };
-		5D2885142E571F1500D0DC90 /* libcares.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcares.a; sourceTree = "<group>"; };
-		5D2885152E571F1500D0DC90 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		5D2885162E571F1500D0DC90 /* libgpr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgpr.a; sourceTree = "<group>"; };
-		5D2885172E571F1500D0DC90 /* libgrpc_authorization_provider.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgrpc_authorization_provider.a; sourceTree = "<group>"; };
-		5D2885182E571F1500D0DC90 /* libgrpc_plugin_support.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgrpc_plugin_support.a; sourceTree = "<group>"; };
-		5D2885192E571F1500D0DC90 /* libgrpc_unsecure.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgrpc_unsecure.a; sourceTree = "<group>"; };
-		5D28851A2E571F1500D0DC90 /* libgrpc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgrpc.a; sourceTree = "<group>"; };
-		5D28851B2E571F1500D0DC90 /* libgrpc++_alts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgrpc++_alts.a"; sourceTree = "<group>"; };
-		5D28851C2E571F1500D0DC90 /* libgrpc++_error_details.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgrpc++_error_details.a"; sourceTree = "<group>"; };
-		5D28851D2E571F1500D0DC90 /* libgrpc++_reflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgrpc++_reflection.a"; sourceTree = "<group>"; };
-		5D28851E2E571F1500D0DC90 /* libgrpc++_unsecure.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgrpc++_unsecure.a"; sourceTree = "<group>"; };
-		5D28851F2E571F1500D0DC90 /* libgrpc++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgrpc++.a"; sourceTree = "<group>"; };
-		5D2885202E571F1500D0DC90 /* libgrpcpp_channelz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgrpcpp_channelz.a; sourceTree = "<group>"; };
 		5D2885212E571F1500D0DC90 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libprotobuf-lite.a"; sourceTree = "<group>"; };
 		5D2885222E571F1500D0DC90 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
 		5D2885232E571F1500D0DC90 /* libprotoc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotoc.a; sourceTree = "<group>"; };
-		5D2885242E571F1500D0DC90 /* libre2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libre2.a; sourceTree = "<group>"; };
-		5D2885252E571F1500D0DC90 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		5D2885262E571F1500D0DC90 /* libupb_base_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_base_lib.a; sourceTree = "<group>"; };
-		5D2885272E571F1500D0DC90 /* libupb_hash_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_hash_lib.a; sourceTree = "<group>"; };
-		5D2885282E571F1500D0DC90 /* libupb_json_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_json_lib.a; sourceTree = "<group>"; };
-		5D2885292E571F1500D0DC90 /* libupb_lex_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_lex_lib.a; sourceTree = "<group>"; };
-		5D28852A2E571F1500D0DC90 /* libupb_mem_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_mem_lib.a; sourceTree = "<group>"; };
-		5D28852B2E571F1500D0DC90 /* libupb_message_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_message_lib.a; sourceTree = "<group>"; };
-		5D28852C2E571F1500D0DC90 /* libupb_mini_descriptor_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_mini_descriptor_lib.a; sourceTree = "<group>"; };
-		5D28852D2E571F1500D0DC90 /* libupb_mini_table_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_mini_table_lib.a; sourceTree = "<group>"; };
-		5D28852E2E571F1500D0DC90 /* libupb_reflection_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_reflection_lib.a; sourceTree = "<group>"; };
-		5D28852F2E571F1500D0DC90 /* libupb_textformat_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_textformat_lib.a; sourceTree = "<group>"; };
-		5D2885302E571F1500D0DC90 /* libupb_wire_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb_wire_lib.a; sourceTree = "<group>"; };
-		5D2885312E571F1500D0DC90 /* libupb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libupb.a; sourceTree = "<group>"; };
 		5D2885322E571F1500D0DC90 /* libutf8_range_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libutf8_range_lib.a; sourceTree = "<group>"; };
 		5D2885332E571F1500D0DC90 /* libutf8_range.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libutf8_range.a; sourceTree = "<group>"; };
 		5D2885342E571F1500D0DC90 /* libutf8_validity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libutf8_validity.a; sourceTree = "<group>"; };
-		5D2885372E571F1500D0DC90 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libz.a; sourceTree = "<group>"; };
 		5D2885E52E571F4500D0DC90 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		5D2885E92E5739C800D0DC90 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.dylib; sourceTree = "<group>"; };
 		5D2885EC2E58182400D0DC90 /* mal_service.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = mal_service.proto; sourceTree = "<group>"; };
@@ -1728,7 +1659,6 @@
 		5D78C2FF2CD3B3BB005637E4 /* libavfilter.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libavfilter.pc; sourceTree = "<group>"; };
 		5D78C3002CD3B3BB005637E4 /* libavformat.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libavformat.pc; sourceTree = "<group>"; };
 		5D78C3012CD3B3BB005637E4 /* libavutil.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libavutil.pc; sourceTree = "<group>"; };
-		5D78C3022CD3B3BB005637E4 /* libffservice.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libffservice.pc; sourceTree = "<group>"; };
 		5D78C3032CD3B3BB005637E4 /* libpostproc.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpostproc.pc; sourceTree = "<group>"; };
 		5D78C3042CD3B3BB005637E4 /* libswresample.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libswresample.pc; sourceTree = "<group>"; };
 		5D78C3052CD3B3BB005637E4 /* libswscale.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libswscale.pc; sourceTree = "<group>"; };
@@ -1935,6 +1865,8 @@
 		5DECFC382DDC2C5F002AA35A /* mal.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = mal.proto; sourceTree = "<group>"; };
 		5DF530C52F1E0A7D00C572D1 /* mal_jpg_parser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mal_jpg_parser.hpp; sourceTree = "<group>"; };
 		5DF530C62F1E0A7D00C572D1 /* mal_jpg_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mal_jpg_parser.cpp; sourceTree = "<group>"; };
+		A56E0BC381086C593581AD24 /* libmdp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libmdp.dylib; path = libmdp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1946,7 +1878,6 @@
 				5D2885E62E571F4500D0DC90 /* libz.1.tbd in Frameworks */,
 				5D2885672E571F1500D0DC90 /* libabsl_base.a in Frameworks */,
 				5DE664812D097BAC00232A70 /* Security.framework in Frameworks */,
-				5D2885D12E571F1500D0DC90 /* libssl.a in Frameworks */,
 				5D2885DB2E571F1500D0DC90 /* libupb_textformat_lib.a in Frameworks */,
 				5D2885AD2E571F1500D0DC90 /* libabsl_scoped_set_env.a in Frameworks */,
 				5DE6647F2D097B9300232A70 /* libiconv.tbd in Frameworks */,
@@ -1958,7 +1889,6 @@
 				5DE6647D2D097B8800232A70 /* CoreFoundation.framework in Frameworks */,
 				5DE6647B2D097B6800232A70 /* libboringssl.tbd in Frameworks */,
 				5D28858C2E571F1500D0DC90 /* libabsl_leak_check.a in Frameworks */,
-				5D2885C22E571F1500D0DC90 /* libgpr.a in Frameworks */,
 				5DE664792D097B5E00232A70 /* CoreVideo.framework in Frameworks */,
 				5D2885B02E571F1500D0DC90 /* libabsl_status.a in Frameworks */,
 				5D2885792E571F1500D0DC90 /* libabsl_examine_stack.a in Frameworks */,
@@ -1983,12 +1913,9 @@
 				5D2885E32E571F1500D0DC90 /* libz.a in Frameworks */,
 				5D2885A42E571F1500D0DC90 /* libabsl_random_internal_randen_hwaes_impl.a in Frameworks */,
 				5D2885CE2E571F1500D0DC90 /* libprotobuf.a in Frameworks */,
-				5D78C39F2CD3B3BB005637E4 /* libharfbuzz-cairo.a in Frameworks */,
-				5D78C3B42CD3B3BB005637E4 /* libXdmcp.a in Frameworks */,
 				5D2885D32E571F1500D0DC90 /* libupb_hash_lib.a in Frameworks */,
 				5D2885812E571F1500D0DC90 /* libabsl_flags_parse.a in Frameworks */,
 				5D2885AE2E571F1500D0DC90 /* libabsl_spinlock_wait.a in Frameworks */,
-				5D78C3A12CD3B3BB005637E4 /* libharfbuzz-icu.a in Frameworks */,
 				5D2885C52E571F1500D0DC90 /* libgrpc_unsecure.a in Frameworks */,
 				5D78C39B2CD3B3BB005637E4 /* libswscale.a in Frameworks */,
 				5D2885D22E571F1500D0DC90 /* libupb_base_lib.a in Frameworks */,
@@ -1997,11 +1924,9 @@
 				5D78C3A22CD3B3BB005637E4 /* libharfbuzz-subset.a in Frameworks */,
 				5D2885712E571F1500D0DC90 /* libabsl_crc_cpu_detect.a in Frameworks */,
 				5D78C3A02CD3B3BB005637E4 /* libharfbuzz-gobject.a in Frameworks */,
-				5D78C3A62CD3B3BB005637E4 /* libpng16.a in Frameworks */,
 				5D2885C82E571F1500D0DC90 /* libgrpc++_error_details.a in Frameworks */,
 				5D2885912E571F1500D0DC90 /* libabsl_log_internal_conditions.a in Frameworks */,
 				5D2885932E571F1500D0DC90 /* libabsl_log_internal_format.a in Frameworks */,
-				5D2885C62E571F1500D0DC90 /* libgrpc.a in Frameworks */,
 				5D78C3942CD3B3BB005637E4 /* libavdevice.a in Frameworks */,
 				5D2885692E571F1500D0DC90 /* libabsl_civil_time.a in Frameworks */,
 				5D78C3AC2CD3B3BB005637E4 /* libwebpmux.a in Frameworks */,
@@ -2011,21 +1936,16 @@
 				5D2885972E571F1500D0DC90 /* libabsl_log_internal_nullguard.a in Frameworks */,
 				5D2885842E571F1500D0DC90 /* libabsl_flags_reflection.a in Frameworks */,
 				5D2885942E571F1500D0DC90 /* libabsl_log_internal_globals.a in Frameworks */,
-				5D2885D02E571F1500D0DC90 /* libre2.a in Frameworks */,
 				5D2885A32E571F1500D0DC90 /* libabsl_random_internal_platform.a in Frameworks */,
 				5D28859A2E571F1500D0DC90 /* libabsl_log_severity.a in Frameworks */,
-				5D78C3B32CD3B3BB005637E4 /* libxcb.a in Frameworks */,
 				5D2885982E571F1500D0DC90 /* libabsl_log_internal_proto.a in Frameworks */,
-				5D2885BF2E571F1500D0DC90 /* libaddress_sorting.a in Frameworks */,
 				5D28858D2E571F1500D0DC90 /* libabsl_log_flags.a in Frameworks */,
 				5D28856B2E571F1500D0DC90 /* libabsl_cord.a in Frameworks */,
 				5D28856E2E571F1500D0DC90 /* libabsl_cordz_info.a in Frameworks */,
-				5D78C3982CD3B3BB005637E4 /* libffservice.a in Frameworks */,
 				5D28858E2E571F1500D0DC90 /* libabsl_log_globals.a in Frameworks */,
 				5D2885B72E571F1500D0DC90 /* libabsl_symbolize.a in Frameworks */,
 				5D28856C2E571F1500D0DC90 /* libabsl_cordz_functions.a in Frameworks */,
 				5D2885762E571F1500D0DC90 /* libabsl_demangle_internal.a in Frameworks */,
-				5D78C3B12CD3B3BB005637E4 /* libxcb-shm.a in Frameworks */,
 				5D78C3AA2CD3B3BB005637E4 /* libwebp.a in Frameworks */,
 				5D78C3A92CD3B3BB005637E4 /* libsharpyuv.a in Frameworks */,
 				5D78C39D2CD3B3BB005637E4 /* libfribidi.a in Frameworks */,
@@ -2035,7 +1955,6 @@
 				5D78C3922CD3B3BB005637E4 /* libfdk-aac.a in Frameworks */,
 				5D28858A2E571F1500D0DC90 /* libabsl_int128.a in Frameworks */,
 				5D2885822E571F1500D0DC90 /* libabsl_flags_private_handle_accessor.a in Frameworks */,
-				5D78C3B22CD3B3BB005637E4 /* libxcb-xfixes.a in Frameworks */,
 				5D2885B12E571F1500D0DC90 /* libabsl_statusor.a in Frameworks */,
 				5D2885B22E571F1500D0DC90 /* libabsl_str_format_internal.a in Frameworks */,
 				5D2885AB2E571F1500D0DC90 /* libabsl_raw_hash_set.a in Frameworks */,
@@ -2054,11 +1973,9 @@
 				5D2885D92E571F1500D0DC90 /* libupb_mini_table_lib.a in Frameworks */,
 				5D2885DF2E571F1500D0DC90 /* libutf8_range.a in Frameworks */,
 				5D2885872E571F1500D0DC90 /* libabsl_graphcycles_internal.a in Frameworks */,
-				5D2885C12E571F1500D0DC90 /* libcrypto.a in Frameworks */,
 				5D2885992E571F1500D0DC90 /* libabsl_log_internal_structured_proto.a in Frameworks */,
 				5D2885AA2E571F1500D0DC90 /* libabsl_random_seed_sequences.a in Frameworks */,
 				5D2885D82E571F1500D0DC90 /* libupb_mini_descriptor_lib.a in Frameworks */,
-				5D2885DD2E571F1500D0DC90 /* libupb.a in Frameworks */,
 				5D78C3AD2CD3B3BB005637E4 /* libx264.a in Frameworks */,
 				5D2885C32E571F1500D0DC90 /* libgrpc_authorization_provider.a in Frameworks */,
 				5D2885B42E571F1500D0DC90 /* libabsl_string_view.a in Frameworks */,
@@ -2074,14 +1991,12 @@
 				5D2885BD2E571F1500D0DC90 /* libabsl_utf8_for_code_point.a in Frameworks */,
 				5D2885CB2E571F1500D0DC90 /* libgrpc++.a in Frameworks */,
 				5D28859F2E571F1500D0DC90 /* libabsl_poison.a in Frameworks */,
-				5D78C3B02CD3B3BB005637E4 /* libxcb-shape.a in Frameworks */,
 				5D2885B52E571F1500D0DC90 /* libabsl_strings_internal.a in Frameworks */,
 				5D2885D72E571F1500D0DC90 /* libupb_message_lib.a in Frameworks */,
 				5D2885BB2E571F1500D0DC90 /* libabsl_time.a in Frameworks */,
 				5D28857E2E571F1500D0DC90 /* libabsl_flags_config.a in Frameworks */,
 				5D2885A72E571F1500D0DC90 /* libabsl_random_internal_randen.a in Frameworks */,
 				5D78C3992CD3B3BB005637E4 /* libpostproc.a in Frameworks */,
-				5D2885C02E571F1500D0DC90 /* libcares.a in Frameworks */,
 				5D78C3972CD3B3BB005637E4 /* libavutil.a in Frameworks */,
 				5D2885722E571F1500D0DC90 /* libabsl_crc_internal.a in Frameworks */,
 				5D78C3A72CD3B3BB005637E4 /* libSDL2.a in Frameworks */,
@@ -2095,8 +2010,6 @@
 				5D2885A52E571F1500D0DC90 /* libabsl_random_internal_randen_hwaes.a in Frameworks */,
 				5D2885B92E571F1500D0DC90 /* libabsl_throw_delegate.a in Frameworks */,
 				5D2885782E571F1500D0DC90 /* libabsl_die_if_null.a in Frameworks */,
-				5D78C3A82CD3B3BB005637E4 /* libvmaf.a in Frameworks */,
-				5D78C3AF2CD3B3BB005637E4 /* libXau.a in Frameworks */,
 				5D28858F2E571F1500D0DC90 /* libabsl_log_initialize.a in Frameworks */,
 				5D2885A12E571F1500D0DC90 /* libabsl_random_internal_distribution_test_util.a in Frameworks */,
 				5D28859D2E571F1500D0DC90 /* libabsl_malloc_internal.a in Frameworks */,
@@ -2117,6 +2030,145 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA3C04F8A6F28619C41E0A773C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2885E62E571F4500D0DC90 /* libz.1.tbd in Frameworks */,
+				5D2885EA2E5739C800D0DC90 /* libz.1.dylib in Frameworks */,
+				5D2886082E58528B00D0DC90 /* libresolv.tbd in Frameworks */,
+				5DE6646F2D097B1E00232A70 /* VideoToolbox.framework in Frameworks */,
+				5DE664712D097B2600232A70 /* AudioToolbox.framework in Frameworks */,
+				5DE664732D097B3800232A70 /* CoreMedia.framework in Frameworks */,
+				5DE664752D097B4600232A70 /* libz.tbd in Frameworks */,
+				5DE664772D097B4E00232A70 /* libbz2.tbd in Frameworks */,
+				5DE664792D097B5E00232A70 /* CoreVideo.framework in Frameworks */,
+				5DE6647B2D097B6800232A70 /* libboringssl.tbd in Frameworks */,
+				5DE6647D2D097B8800232A70 /* CoreFoundation.framework in Frameworks */,
+				5DE6647F2D097B9300232A70 /* libiconv.tbd in Frameworks */,
+				5DE664812D097BAC00232A70 /* Security.framework in Frameworks */,
+				5D78C3A72CD3B3BB005637E4 /* libSDL2.a in Frameworks */,
+				5D2885672E571F1500D0DC90 /* libabsl_base.a in Frameworks */,
+				5D2885682E571F1500D0DC90 /* libabsl_city.a in Frameworks */,
+				5D2885692E571F1500D0DC90 /* libabsl_civil_time.a in Frameworks */,
+				5D28856B2E571F1500D0DC90 /* libabsl_cord.a in Frameworks */,
+				5D28856A2E571F1500D0DC90 /* libabsl_cord_internal.a in Frameworks */,
+				5D28856C2E571F1500D0DC90 /* libabsl_cordz_functions.a in Frameworks */,
+				5D28856D2E571F1500D0DC90 /* libabsl_cordz_handle.a in Frameworks */,
+				5D28856E2E571F1500D0DC90 /* libabsl_cordz_info.a in Frameworks */,
+				5D28856F2E571F1500D0DC90 /* libabsl_cordz_sample_token.a in Frameworks */,
+				5D2885732E571F1500D0DC90 /* libabsl_crc32c.a in Frameworks */,
+				5D2885702E571F1500D0DC90 /* libabsl_crc_cord_state.a in Frameworks */,
+				5D2885712E571F1500D0DC90 /* libabsl_crc_cpu_detect.a in Frameworks */,
+				5D2885722E571F1500D0DC90 /* libabsl_crc_internal.a in Frameworks */,
+				5D2885742E571F1500D0DC90 /* libabsl_debugging_internal.a in Frameworks */,
+				5D2885752E571F1500D0DC90 /* libabsl_decode_rust_punycode.a in Frameworks */,
+				5D2885762E571F1500D0DC90 /* libabsl_demangle_internal.a in Frameworks */,
+				5D2885772E571F1500D0DC90 /* libabsl_demangle_rust.a in Frameworks */,
+				5D2885782E571F1500D0DC90 /* libabsl_die_if_null.a in Frameworks */,
+				5D2885792E571F1500D0DC90 /* libabsl_examine_stack.a in Frameworks */,
+				5D28857A2E571F1500D0DC90 /* libabsl_exponential_biased.a in Frameworks */,
+				5D28857B2E571F1500D0DC90 /* libabsl_failure_signal_handler.a in Frameworks */,
+				5D28857D2E571F1500D0DC90 /* libabsl_flags_commandlineflag.a in Frameworks */,
+				5D28857C2E571F1500D0DC90 /* libabsl_flags_commandlineflag_internal.a in Frameworks */,
+				5D28857E2E571F1500D0DC90 /* libabsl_flags_config.a in Frameworks */,
+				5D28857F2E571F1500D0DC90 /* libabsl_flags_internal.a in Frameworks */,
+				5D2885802E571F1500D0DC90 /* libabsl_flags_marshalling.a in Frameworks */,
+				5D2885812E571F1500D0DC90 /* libabsl_flags_parse.a in Frameworks */,
+				5D2885822E571F1500D0DC90 /* libabsl_flags_private_handle_accessor.a in Frameworks */,
+				5D2885832E571F1500D0DC90 /* libabsl_flags_program_name.a in Frameworks */,
+				5D2885842E571F1500D0DC90 /* libabsl_flags_reflection.a in Frameworks */,
+				5D2885862E571F1500D0DC90 /* libabsl_flags_usage.a in Frameworks */,
+				5D2885852E571F1500D0DC90 /* libabsl_flags_usage_internal.a in Frameworks */,
+				5D2885872E571F1500D0DC90 /* libabsl_graphcycles_internal.a in Frameworks */,
+				5D2885882E571F1500D0DC90 /* libabsl_hash.a in Frameworks */,
+				5D2885892E571F1500D0DC90 /* libabsl_hashtablez_sampler.a in Frameworks */,
+				5D28858A2E571F1500D0DC90 /* libabsl_int128.a in Frameworks */,
+				5D28858B2E571F1500D0DC90 /* libabsl_kernel_timeout_internal.a in Frameworks */,
+				5D28858C2E571F1500D0DC90 /* libabsl_leak_check.a in Frameworks */,
+				5D28858D2E571F1500D0DC90 /* libabsl_log_flags.a in Frameworks */,
+				5D28858E2E571F1500D0DC90 /* libabsl_log_globals.a in Frameworks */,
+				5D28858F2E571F1500D0DC90 /* libabsl_log_initialize.a in Frameworks */,
+				5D2885902E571F1500D0DC90 /* libabsl_log_internal_check_op.a in Frameworks */,
+				5D2885912E571F1500D0DC90 /* libabsl_log_internal_conditions.a in Frameworks */,
+				5D2885922E571F1500D0DC90 /* libabsl_log_internal_fnmatch.a in Frameworks */,
+				5D2885932E571F1500D0DC90 /* libabsl_log_internal_format.a in Frameworks */,
+				5D2885942E571F1500D0DC90 /* libabsl_log_internal_globals.a in Frameworks */,
+				5D2885952E571F1500D0DC90 /* libabsl_log_internal_log_sink_set.a in Frameworks */,
+				5D2885962E571F1500D0DC90 /* libabsl_log_internal_message.a in Frameworks */,
+				5D2885972E571F1500D0DC90 /* libabsl_log_internal_nullguard.a in Frameworks */,
+				5D2885982E571F1500D0DC90 /* libabsl_log_internal_proto.a in Frameworks */,
+				5D2885992E571F1500D0DC90 /* libabsl_log_internal_structured_proto.a in Frameworks */,
+				5D28859A2E571F1500D0DC90 /* libabsl_log_severity.a in Frameworks */,
+				5D28859B2E571F1500D0DC90 /* libabsl_log_sink.a in Frameworks */,
+				5D28859C2E571F1500D0DC90 /* libabsl_low_level_hash.a in Frameworks */,
+				5D28859D2E571F1500D0DC90 /* libabsl_malloc_internal.a in Frameworks */,
+				5D28859E2E571F1500D0DC90 /* libabsl_periodic_sampler.a in Frameworks */,
+				5D28859F2E571F1500D0DC90 /* libabsl_poison.a in Frameworks */,
+				5D2885A02E571F1500D0DC90 /* libabsl_random_distributions.a in Frameworks */,
+				5D2885A12E571F1500D0DC90 /* libabsl_random_internal_distribution_test_util.a in Frameworks */,
+				5D2885A22E571F1500D0DC90 /* libabsl_random_internal_entropy_pool.a in Frameworks */,
+				5D2885A32E571F1500D0DC90 /* libabsl_random_internal_platform.a in Frameworks */,
+				5D2885A72E571F1500D0DC90 /* libabsl_random_internal_randen.a in Frameworks */,
+				5D2885A52E571F1500D0DC90 /* libabsl_random_internal_randen_hwaes.a in Frameworks */,
+				5D2885A42E571F1500D0DC90 /* libabsl_random_internal_randen_hwaes_impl.a in Frameworks */,
+				5D2885A62E571F1500D0DC90 /* libabsl_random_internal_randen_slow.a in Frameworks */,
+				5D2885A82E571F1500D0DC90 /* libabsl_random_internal_seed_material.a in Frameworks */,
+				5D2885A92E571F1500D0DC90 /* libabsl_random_seed_gen_exception.a in Frameworks */,
+				5D2885AA2E571F1500D0DC90 /* libabsl_random_seed_sequences.a in Frameworks */,
+				5D2885AB2E571F1500D0DC90 /* libabsl_raw_hash_set.a in Frameworks */,
+				5D2885AC2E571F1500D0DC90 /* libabsl_raw_logging_internal.a in Frameworks */,
+				5D2885AD2E571F1500D0DC90 /* libabsl_scoped_set_env.a in Frameworks */,
+				5D2885AE2E571F1500D0DC90 /* libabsl_spinlock_wait.a in Frameworks */,
+				5D2885AF2E571F1500D0DC90 /* libabsl_stacktrace.a in Frameworks */,
+				5D2885B02E571F1500D0DC90 /* libabsl_status.a in Frameworks */,
+				5D2885B12E571F1500D0DC90 /* libabsl_statusor.a in Frameworks */,
+				5D2885B22E571F1500D0DC90 /* libabsl_str_format_internal.a in Frameworks */,
+				5D2885B32E571F1500D0DC90 /* libabsl_strerror.a in Frameworks */,
+				5D2885B42E571F1500D0DC90 /* libabsl_string_view.a in Frameworks */,
+				5D2885B62E571F1500D0DC90 /* libabsl_strings.a in Frameworks */,
+				5D2885B52E571F1500D0DC90 /* libabsl_strings_internal.a in Frameworks */,
+				5D2885B72E571F1500D0DC90 /* libabsl_symbolize.a in Frameworks */,
+				5D2885B82E571F1500D0DC90 /* libabsl_synchronization.a in Frameworks */,
+				5D2885B92E571F1500D0DC90 /* libabsl_throw_delegate.a in Frameworks */,
+				5D2885BB2E571F1500D0DC90 /* libabsl_time.a in Frameworks */,
+				5D2885BA2E571F1500D0DC90 /* libabsl_time_zone.a in Frameworks */,
+				5D2885BC2E571F1500D0DC90 /* libabsl_tracing_internal.a in Frameworks */,
+				5D2885BD2E571F1500D0DC90 /* libabsl_utf8_for_code_point.a in Frameworks */,
+				5D2885BE2E571F1500D0DC90 /* libabsl_vlog_config_internal.a in Frameworks */,
+				5D78C3902CD3B3BB005637E4 /* libaom.a in Frameworks */,
+				5D78C3A42CD3B3BB005637E4 /* libass.a in Frameworks */,
+				5D78C3932CD3B3BB005637E4 /* libavcodec.a in Frameworks */,
+				5D78C3942CD3B3BB005637E4 /* libavdevice.a in Frameworks */,
+				5D78C3952CD3B3BB005637E4 /* libavfilter.a in Frameworks */,
+				5D78C3962CD3B3BB005637E4 /* libavformat.a in Frameworks */,
+				5D78C3972CD3B3BB005637E4 /* libavutil.a in Frameworks */,
+				5D78C3922CD3B3BB005637E4 /* libfdk-aac.a in Frameworks */,
+				5D78C39C2CD3B3BB005637E4 /* libfreetype.a in Frameworks */,
+				5D78C39D2CD3B3BB005637E4 /* libfribidi.a in Frameworks */,
+				5D78C3A02CD3B3BB005637E4 /* libharfbuzz-gobject.a in Frameworks */,
+				5D78C3A22CD3B3BB005637E4 /* libharfbuzz-subset.a in Frameworks */,
+				5D78C3A32CD3B3BB005637E4 /* libharfbuzz.a in Frameworks */,
+				5D78C3992CD3B3BB005637E4 /* libpostproc.a in Frameworks */,
+				5D2885CD2E571F1500D0DC90 /* libprotobuf-lite.a in Frameworks */,
+				5D2885CE2E571F1500D0DC90 /* libprotobuf.a in Frameworks */,
+				5D2885CF2E571F1500D0DC90 /* libprotoc.a in Frameworks */,
+				5D78C3A92CD3B3BB005637E4 /* libsharpyuv.a in Frameworks */,
+				5D78C39A2CD3B3BB005637E4 /* libswresample.a in Frameworks */,
+				5D78C39B2CD3B3BB005637E4 /* libswscale.a in Frameworks */,
+				5D78C3A52CD3B3BB005637E4 /* libunibreak.a in Frameworks */,
+				5D2885DF2E571F1500D0DC90 /* libutf8_range.a in Frameworks */,
+				5D2885DE2E571F1500D0DC90 /* libutf8_range_lib.a in Frameworks */,
+				5D2885E02E571F1500D0DC90 /* libutf8_validity.a in Frameworks */,
+				5D78C3AA2CD3B3BB005637E4 /* libwebp.a in Frameworks */,
+				5D78C3AB2CD3B3BB005637E4 /* libwebpdemux.a in Frameworks */,
+				5D78C3AC2CD3B3BB005637E4 /* libwebpmux.a in Frameworks */,
+				5D78C3AD2CD3B3BB005637E4 /* libx264.a in Frameworks */,
+				5D78C3AE2CD3B3BB005637E4 /* libx265.a in Frameworks */,
+				5DC5D59F2E6AC74E0051E800 /* libyuv.a in Frameworks */,			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -4032,41 +4084,12 @@
 				5D2885102E571F1500D0DC90 /* libabsl_tracing_internal.a */,
 				5D2885112E571F1500D0DC90 /* libabsl_utf8_for_code_point.a */,
 				5D2885122E571F1500D0DC90 /* libabsl_vlog_config_internal.a */,
-				5D2885132E571F1500D0DC90 /* libaddress_sorting.a */,
-				5D2885142E571F1500D0DC90 /* libcares.a */,
-				5D2885152E571F1500D0DC90 /* libcrypto.a */,
-				5D2885162E571F1500D0DC90 /* libgpr.a */,
-				5D2885172E571F1500D0DC90 /* libgrpc_authorization_provider.a */,
-				5D2885182E571F1500D0DC90 /* libgrpc_plugin_support.a */,
-				5D2885192E571F1500D0DC90 /* libgrpc_unsecure.a */,
-				5D28851A2E571F1500D0DC90 /* libgrpc.a */,
-				5D28851B2E571F1500D0DC90 /* libgrpc++_alts.a */,
-				5D28851C2E571F1500D0DC90 /* libgrpc++_error_details.a */,
-				5D28851D2E571F1500D0DC90 /* libgrpc++_reflection.a */,
-				5D28851E2E571F1500D0DC90 /* libgrpc++_unsecure.a */,
-				5D28851F2E571F1500D0DC90 /* libgrpc++.a */,
-				5D2885202E571F1500D0DC90 /* libgrpcpp_channelz.a */,
 				5D2885212E571F1500D0DC90 /* libprotobuf-lite.a */,
 				5D2885222E571F1500D0DC90 /* libprotobuf.a */,
 				5D2885232E571F1500D0DC90 /* libprotoc.a */,
-				5D2885242E571F1500D0DC90 /* libre2.a */,
-				5D2885252E571F1500D0DC90 /* libssl.a */,
-				5D2885262E571F1500D0DC90 /* libupb_base_lib.a */,
-				5D2885272E571F1500D0DC90 /* libupb_hash_lib.a */,
-				5D2885282E571F1500D0DC90 /* libupb_json_lib.a */,
-				5D2885292E571F1500D0DC90 /* libupb_lex_lib.a */,
-				5D28852A2E571F1500D0DC90 /* libupb_mem_lib.a */,
-				5D28852B2E571F1500D0DC90 /* libupb_message_lib.a */,
-				5D28852C2E571F1500D0DC90 /* libupb_mini_descriptor_lib.a */,
-				5D28852D2E571F1500D0DC90 /* libupb_mini_table_lib.a */,
-				5D28852E2E571F1500D0DC90 /* libupb_reflection_lib.a */,
-				5D28852F2E571F1500D0DC90 /* libupb_textformat_lib.a */,
-				5D2885302E571F1500D0DC90 /* libupb_wire_lib.a */,
-				5D2885312E571F1500D0DC90 /* libupb.a */,
 				5D2885322E571F1500D0DC90 /* libutf8_range_lib.a */,
 				5D2885332E571F1500D0DC90 /* libutf8_range.a */,
 				5D2885342E571F1500D0DC90 /* libutf8_validity.a */,
-				5D2885372E571F1500D0DC90 /* libz.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -4219,8 +4242,8 @@
 			isa = PBXGroup;
 			children = (
 				5D4F6CF62ED444150063D83E /* nlohmann */,
-				5DC5D59E2E6AC74E0051E800 /* libyuv_arm64 */,
-				5DECFCD42DDCBA2F002AA35A /* protoc_arm64 */,
+				5DC5D59E2E6AC74E0051E800 /* universal/Libs/other */,
+				5DECFCD42DDCBA2F002AA35A /* universal */,
 				5D78C38F2CD3B3BB005637E4 /* ffmpeg_arm64 */,
 				5D78C2422CD3B2FE005637E4 /* sources */,
 				5D78BD372CD3B155005637E4 /* main.cpp */,
@@ -4747,7 +4770,6 @@
 				5D78C2FF2CD3B3BB005637E4 /* libavfilter.pc */,
 				5D78C3002CD3B3BB005637E4 /* libavformat.pc */,
 				5D78C3012CD3B3BB005637E4 /* libavutil.pc */,
-				5D78C3022CD3B3BB005637E4 /* libffservice.pc */,
 				5D78C3032CD3B3BB005637E4 /* libpostproc.pc */,
 				5D78C3042CD3B3BB005637E4 /* libswresample.pc */,
 				5D78C3052CD3B3BB005637E4 /* libswscale.pc */,
@@ -4764,7 +4786,6 @@
 				5D78C3092CD3B3BB005637E4 /* libavfilter.a */,
 				5D78C30A2CD3B3BB005637E4 /* libavformat.a */,
 				5D78C30B2CD3B3BB005637E4 /* libavutil.a */,
-				5D78C30C2CD3B3BB005637E4 /* libffservice.a */,
 				5D78C30D2CD3B3BB005637E4 /* libpostproc.a */,
 				5D78C30E2CD3B3BB005637E4 /* libswresample.a */,
 				5D78C30F2CD3B3BB005637E4 /* libswscale.a */,
@@ -4807,9 +4828,7 @@
 		5D78C31D2CD3B3BB005637E4 /* HARFBUZZ */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C3182CD3B3BB005637E4 /* libharfbuzz-cairo.a */,
 				5D78C3192CD3B3BB005637E4 /* libharfbuzz-gobject.a */,
-				5D78C31A2CD3B3BB005637E4 /* libharfbuzz-icu.a */,
 				5D78C31B2CD3B3BB005637E4 /* libharfbuzz-subset.a */,
 				5D78C31C2CD3B3BB005637E4 /* libharfbuzz.a */,
 			);
@@ -4852,7 +4871,6 @@
 		5D78C3272CD3B3BB005637E4 /* PNG */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C3262CD3B3BB005637E4 /* libpng16.a */,
 			);
 			path = PNG;
 			sourceTree = "<group>";
@@ -4955,7 +4973,6 @@
 		5D78C37B2CD3B3BB005637E4 /* VMAF */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C37A2CD3B3BB005637E4 /* libvmaf.a */,
 			);
 			path = VMAF;
 			sourceTree = "<group>";
@@ -4990,7 +5007,6 @@
 		5D78C3862CD3B3BB005637E4 /* XAU */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C3852CD3B3BB005637E4 /* libXau.a */,
 			);
 			path = XAU;
 			sourceTree = "<group>";
@@ -4998,10 +5014,6 @@
 		5D78C38B2CD3B3BB005637E4 /* XCB */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C3872CD3B3BB005637E4 /* libxcb-shape.a */,
-				5D78C3882CD3B3BB005637E4 /* libxcb-shm.a */,
-				5D78C3892CD3B3BB005637E4 /* libxcb-xfixes.a */,
-				5D78C38A2CD3B3BB005637E4 /* libxcb.a */,
 			);
 			path = XCB;
 			sourceTree = "<group>";
@@ -5009,7 +5021,6 @@
 		5D78C38D2CD3B3BB005637E4 /* XDMCP */ = {
 			isa = PBXGroup;
 			children = (
-				5D78C38C2CD3B3BB005637E4 /* libXdmcp.a */,
 			);
 			path = XDMCP;
 			sourceTree = "<group>";
@@ -5160,14 +5171,14 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
-		5DC5D59E2E6AC74E0051E800 /* libyuv_arm64 */ = {
+		5DC5D59E2E6AC74E0051E800 /* universal/Libs/other */ = {
 			isa = PBXGroup;
 			children = (
 				5DC5D59B2E6AC74E0051E800 /* include */,
 				5DC5D59D2E6AC74E0051E800 /* lib */,
 			);
-			name = libyuv_arm64;
-			path = ../../src/third_party/mac/libyuv_arm64;
+			name = universal/Libs/other;
+			path = ../../src/third_party/mac/universal/Libs/other;
 			sourceTree = "<group>";
 		};
 		5DD9F9882E530E4D007A851B /* proto_gen */ = {
@@ -5246,14 +5257,14 @@
 			path = proto;
 			sourceTree = "<group>";
 		};
-		5DECFCD42DDCBA2F002AA35A /* protoc_arm64 */ = {
+		5DECFCD42DDCBA2F002AA35A /* universal */ = {
 			isa = PBXGroup;
 			children = (
 				5D2883C42E571F1400D0DC90 /* include */,
 				5D2885392E571F1500D0DC90 /* lib */,
 			);
-			name = protoc_arm64;
-			path = ../../src/third_party/mac/protoc_arm64;
+			name = universal;
+			path = ../../src/third_party/mac/universal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5276,6 +5287,23 @@
 			productReference = 5D78BD342CD3B155005637E4 /* Demo */;
 			productType = "com.apple.product-type.tool";
 		};
+		303FE5F47484566096B116F53757 /* libmdp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5CB105996A82AD5C865AB3 /* Build configuration list for PBXNativeTarget "libmdp" */;
+			buildPhases = (
+				1D8DD852D4AEC7C2EC30633C1AAB /* Sources */,
+				AA3C04F8A6F28619C41E0A773C9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libmdp;
+			productName = libmdp;
+			productReference = A56E0BC381086C593581AD24 /* libmdp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -5304,6 +5332,7 @@
 			projectRoot = "";
 			targets = (
 				5D78BD332CD3B155005637E4 /* Demo */,
+				303FE5F47484566096B116F53757 /* libmdp */,
 			);
 		};
 /* End PBXProject section */
@@ -5402,6 +5431,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D8DD852D4AEC7C2EC30633C1AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D287F8A2E54741900D0DC90 /* stream.pb.cc in Sources */,
+				5D287F8B2E54741900D0DC90 /* mp4.pb.cc in Sources */,
+				5D287F8C2E54741900D0DC90 /* nal.pb.cc in Sources */,
+				5D287F8D2E54741900D0DC90 /* mal.pb.cc in Sources */,
+				5D28853A2E571F1500D0DC90 /* spinlock_akaros.inc in Sources */,
+				5D28853B2E571F1500D0DC90 /* spinlock_linux.inc in Sources */,
+				5D28853C2E571F1500D0DC90 /* spinlock_posix.inc in Sources */,
+				5D28853D2E571F1500D0DC90 /* spinlock_win32.inc in Sources */,
+				5D28853E2E571F1500D0DC90 /* stacktrace_aarch64-inl.inc in Sources */,
+				5D28853F2E571F1500D0DC90 /* stacktrace_arm-inl.inc in Sources */,
+				5D2885402E571F1500D0DC90 /* stacktrace_emscripten-inl.inc in Sources */,
+				5D2885412E571F1500D0DC90 /* stacktrace_generic-inl.inc in Sources */,
+				5D2885422E571F1500D0DC90 /* stacktrace_powerpc-inl.inc in Sources */,
+				5D2885432E571F1500D0DC90 /* stacktrace_riscv-inl.inc in Sources */,
+				5D2885442E571F1500D0DC90 /* stacktrace_unimplemented-inl.inc in Sources */,
+				5D2885452E571F1500D0DC90 /* stacktrace_win32-inl.inc in Sources */,
+				5D2885462E571F1500D0DC90 /* stacktrace_x86-inl.inc in Sources */,
+				5D2885472E571F1500D0DC90 /* symbolize_darwin.inc in Sources */,
+				5D2885482E571F1500D0DC90 /* symbolize_elf.inc in Sources */,
+				5D2885492E571F1500D0DC90 /* symbolize_emscripten.inc in Sources */,
+				5D28854A2E571F1500D0DC90 /* symbolize_unimplemented.inc in Sources */,
+				5D28854B2E571F1500D0DC90 /* symbolize_win32.inc in Sources */,
+				5D28854C2E571F1500D0DC90 /* check_test_impl.inc in Sources */,
+				5D28854D2E571F1500D0DC90 /* log_basic_test_impl.inc in Sources */,
+				5D28854E2E571F1500D0DC90 /* int128_have_intrinsic.inc in Sources */,
+				5D28854F2E571F1500D0DC90 /* int128_no_intrinsic.inc in Sources */,
+				5D2885502E571F1500D0DC90 /* get_current_time_chrono.inc in Sources */,
+				5D2885512E571F1500D0DC90 /* get_current_time_posix.inc in Sources */,
+				5D2885522E571F1500D0DC90 /* plugin.proto in Sources */,
+				5D2885532E571F1500D0DC90 /* any.proto in Sources */,
+				5D2885542E571F1500D0DC90 /* api.proto in Sources */,
+				5D2885552E571F1500D0DC90 /* cpp_features.proto in Sources */,
+				5D2885562E571F1500D0DC90 /* descriptor.proto in Sources */,
+				5D2885572E571F1500D0DC90 /* duration.proto in Sources */,
+				5D2885582E571F1500D0DC90 /* empty.proto in Sources */,
+				5D2885592E571F1500D0DC90 /* field_mask.proto in Sources */,
+				5D28855A2E571F1500D0DC90 /* go_features.proto in Sources */,
+				5D28855B2E571F1500D0DC90 /* java_features.proto in Sources */,
+				5D28855C2E571F1500D0DC90 /* port_def.inc in Sources */,
+				5D28855D2E571F1500D0DC90 /* port_undef.inc in Sources */,
+				5D28855E2E571F1500D0DC90 /* source_context.proto in Sources */,
+				5D28855F2E571F1500D0DC90 /* struct.proto in Sources */,
+				5D2885602E571F1500D0DC90 /* timestamp.proto in Sources */,
+				5D2885612E571F1500D0DC90 /* type.proto in Sources */,
+				5D2885622E571F1500D0DC90 /* wrappers.proto in Sources */,
+				5D2885632E571F1500D0DC90 /* ports_def.inc in Sources */,
+				5D2885642E571F1500D0DC90 /* ports_undef.inc in Sources */,
+				5D2885652E571F1500D0DC90 /* def.inc in Sources */,
+				5D2885662E571F1500D0DC90 /* undef.inc in Sources */,
+				5D2885ED2E58182400D0DC90 /* mal_service.proto in Sources */,
+				5D2886042E5818BB00D0DC90 /* mal_service.pb.cc in Sources */,
+				5D29C1E62D424BFE00F7F87E /* Test.cpp in Sources */,
+				5D4F6CBB2ED053740063D83E /* atom.proto in Sources */,
+				5D4F6CBE2ED0540E0063D83E /* atom.pb.cc in Sources */,
+				5D58524B2F0FD4C200E1EBDF /* mal_png_parser.cpp in Sources */,
+				5D78BD382CD3B155005637E4 /* main.cpp in Sources */,
+				5D78C2452CD3B2FE005637E4 /* mdp_parser.cpp in Sources */,
+				5D78C2492CD3B2FE005637E4 /* cJSON_Utils.c in Sources */,
+				5D78C24A2CD3B2FE005637E4 /* cJSON.c in Sources */,
+				5D78C24D2CD3B2FE005637E4 /* mdp_error.c in Sources */,
+				5D78C2502CD3B2FE005637E4 /* thpool.c in Sources */,
+				5D78C3CA2CDA5A0A005637E4 /* dart_api_dl.c in Sources */,
+				5D78C3CB2CDA5A0A005637E4 /* dart_init.c in Sources */,
+				5D78C3DB2CDB1CC9005637E4 /* mal_i_parser.cpp in Sources */,
+				5D78C3DC2CDB1CC9005637E4 /* mal_mov_parser.cpp in Sources */,
+				5D78C3DD2CDB1CC9005637E4 /* mal_golomb.cpp in Sources */,
+				5D78C3DE2CDB1CC9005637E4 /* mal_local_datasource.cpp in Sources */,
+				5D78C3E12CDDC0F3005637E4 /* bits_stream.cpp in Sources */,
+				5D78C78A2CE23BAF005637E4 /* mal_webp_parser.cpp in Sources */,
+				5D78C78D2CE2539B005637E4 /* mal_string.cpp in Sources */,
+				5D78C7902CE5DEFD005637E4 /* mal_flv_parser.cpp in Sources */,
+				5D94C06A2D1066CC00869E10 /* mal_mp4_packet_loader.cpp in Sources */,
+				5D0000042F00000400000001 /* mdp_ffi.cpp in Sources */,
+				5D94C0702D1AE1ED00869E10 /* mal_dump.cpp in Sources */,
+				5DB713E72EA788C5005E1350 /* mal_matroska_packet_loader.cpp in Sources */,
+				5DBB0B602E7BDA5800A81BCF /* mal_matroska_parser.cpp in Sources */,
+				5DD9F96B2E4F27D7007A851B /* mp4.proto in Sources */,
+				5DD9F9702E4F2C89007A851B /* nal.proto in Sources */,
+				5DD9F9732E52FC53007A851B /* stream.proto in Sources */,
+				5DE664692D09409900232A70 /* mal_packet_loader.cpp in Sources */,
+				5DE6646C2D09445200232A70 /* mal_ff_packet_loader.cpp in Sources */,
+				5DE664852D0B177D00232A70 /* mal_codec_parser.cpp in Sources */,
+				5DF530C72F1E0A7D00C572D1 /* mal_jpg_parser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -5525,21 +5645,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_APP_SANDBOX = NO;
-				EXCLUDED_ARCHS = x86_64;
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../src/third_party/mac/ffmpeg_arm64/Libs/FFmpeg/include\"",
-					"\"$(SRCROOT)/../src/third_party/mac/protoc_arm64/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/include\"",
 					"\"$(SRCROOT)/../src/sources/c++\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/include\"",
 					"\"$(SRCROOT)/../src/third_party/mac/\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"@executable_path",
-					"\"$(SRCROOT)/../src/third_party/mac/ffmpeg_arm64/Libs\"/**",
-					"\"$(SRCROOT)/../src/third_party/mac/protoc_arm64/lib\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs\"/**",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -5555,21 +5674,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_APP_SANDBOX = NO;
-				EXCLUDED_ARCHS = x86_64;
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../src/third_party/mac/ffmpeg_arm64/Libs/FFmpeg/include\"",
-					"\"$(SRCROOT)/../src/third_party/mac/protoc_arm64/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/include\"",
 					"\"$(SRCROOT)/../src/sources/c++\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/include\"",
 					"\"$(SRCROOT)/../src/third_party/mac/\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"@executable_path",
-					"\"$(SRCROOT)/../src/third_party/mac/ffmpeg_arm64/Libs\"/**",
-					"\"$(SRCROOT)/../src/third_party/mac/protoc_arm64/lib\"",
-					"\"$(SRCROOT)/../src/third_party/mac/libyuv_arm64/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs\"/**",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -5581,6 +5699,104 @@
 			};
 			name = Release;
 		};
+		A0062ED4297CED2E212AD071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_APP_SANDBOX = NO;
+				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/include\"",
+					"\"$(SRCROOT)/../src/sources/c++\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/\"",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"@executable_path",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs\"/**",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/absl/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-error=register",
+				);
+				OTHER_LDFLAGS = (
+					"-framework", "Foundation",
+					"-Wl,-force_load,$(SRCROOT)/../src/third_party/mac/universal/Libs/combined/libmdp_protobuf_combined.a",
+					"-lupb",
+				);
+				PRODUCT_NAME = libmdp;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/sources/c++/deps\"";
+			};
+			name = Debug;
+		};
+
+		1DCD4A276D42A24BBBF93E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_APP_SANDBOX = NO;
+				EXECUTABLE_PREFIX = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/include\"",
+					"\"$(SRCROOT)/../src/sources/c++\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/include\"",
+					"\"$(SRCROOT)/../src/third_party/mac/\"",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"@executable_path",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs\"/**",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/absl/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/FFmpeg/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/other/lib\"",
+					"\"$(SRCROOT)/../src/third_party/mac/universal/Libs/combined/lib\"",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-error=register",
+				);
+				OTHER_LDFLAGS = (
+					"-framework", "Foundation",
+					"-Wl,-force_load,$(SRCROOT)/../src/third_party/mac/universal/Libs/combined/libmdp_protobuf_combined.a",
+					"-lupb",
+				);
+				PRODUCT_NAME = libmdp;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/sources/c++/deps\"";
+			};
+			name = Release;
+		};
+
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5602,6 +5818,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AF5CB105996A82AD5C865AB3 /* Build configuration list for PBXNativeTarget "libmdp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DCD4A276D42A24BBBF93E8D /* Release */,
+				A0062ED4297CED2E212AD071 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
 /* End XCConfigurationList section */
 	};
 	rootObject = 5D78BD2C2CD3B155005637E4 /* Project object */;

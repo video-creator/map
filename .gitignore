@@ -1,0 +1,24 @@
+# Build artifacts
+mal-server/Demo/build/
+mal-server/Demo/.build/
+mal_server/build/
+
+# Precompiled third-party libraries
+mal-server/src/third_party/mac/universal/
+
+# Build caches
+mal-server/tools/macos/.build_artifacts/
+mal-server/tools/macos/.build_sources/
+
+# Compiled dylibs
+mal_client/macos/Runner/libmdp.dylib
+
+# Flutter/Dart
+.dart_tool/
+.packages
+*.iml
+.idea/
+
+# Xcode user state
+*.xcuserdata/
+*.xcuserstate
